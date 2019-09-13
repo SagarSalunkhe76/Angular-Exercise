@@ -1,0 +1,58 @@
+.flex-container {
+          display: grid;
+          grid-template-columns: auto auto auto;
+          background-color: rgb(180, 219, 168);
+          padding: 10px;
+          font-style: Cambria;
+          font-size: 15px;
+          
+          
+        } 
+
+.grid-item:hover {
+          background-color: rgba(255, 255, 255, 0.8);
+          border: 5px solid gray;
+          box-sizing: border-box;
+          padding: 10px;
+          font-size: 15px;
+          opacity: 0.7;
+        }
+
+  
+
+.gride-item1 {
+          position: static;
+          left: 10 px;
+          grid-column: 1 / span 1;
+          font-family: Cambria;
+        } 
+
+
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border: black;
+ 
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    
+  }
+  
+  .container {
+    padding: 2px 16px;
+    background-color:rgb(126, 191, 221);
+    border: 1px solid green;
+  }
+
+  .hr{
+    border:1px solid black;
+  }
+
+  .gride-item1 {
+    font-style: Cambria;
+    font-size: 10px;
+  } 

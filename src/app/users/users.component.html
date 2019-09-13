@@ -1,0 +1,39 @@
+
+<div class="header">
+    <h1>USER INFORMATION</h1>
+</div>
+
+
+<div class="card">
+        <div class="container">
+                <table style="width:100%">
+                        <tr *ngFor="let user_data of user_data">
+                        <hr> 
+                        <div class="flex-container">
+                            <div class="grid-item">
+                            <div class="grid-item1"><td>Name:  {{user_data.name}}</td></div>
+                            <div class="grid-item1"><td>Id:  {{user_data.id}}</td></div>
+                            <div class="grid-item1"><td>Username:  {{user_data.username}}</td></div>
+                            <div class="grid-item1"><td>Email:  {{user_data.email}}</td></div>
+                  
+                            <div class="grid-item1"><td>Address: 
+                                      {{user_data.address.street}},{{user_data.address.suite}},{{user_data.address.city}},
+                                      {{user_data.address.zipcode}} ({{user_data.address.geo.lat}},{{user_data.address.geo.lng}})
+                                  </td></div>
+                  
+                            <div class="grid-item1"><td>Phone:   {{user_data.phone}}</td></div>
+                            <div class="grid-item1"><td>Website:  {{user_data.website}}</td></div>
+                          
+                            <div class="grid-item1"><td>Company Details: 
+                                    <ul>
+                                        <li>Name :{{user_data.company.name}} - <em>{{user_data.company.catchPhrase}}</em></li>
+                                        <li>Service : {{user_data.company.bs}}</li>
+                                   </ul></td>
+                              
+                            <hr>
+                        
+                            </div> 
+          
+        </div>
+</div>
+
